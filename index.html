@@ -4,51 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>FS73</title>
+    <title>Головна</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="/" class="logo">
         <img src="./images/logo.svg" alt="logo" />
       </a>
       <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services and prices</a></li>
-          <li><a href="#">Barbers</a></li>
-          <li><a href="/contacts.html">Contacts</a></li>
+        <ul class="header-nav">
+          <li><a class="header-nav-link current" href="#">About</a></li>
+          <li><a class="header-nav-link" href="#">Services and prices</a></li>
+          <li><a class="header-nav-link" href="#">Barbers</a></li>
+          <li><a class="header-nav-link" href="/contacts.html">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
+      <a class="header-contact" href="tel:+380441111111">+38 044 111 11 11</a>
       <!-- dadadadada -->
-      <button type="button">Online-booking</button>
+      <button class="header-btn" type="button">Online-booking</button>
     </header>
 
     <main>
-      <section>
-        <span>A hair salon for men in Kyiv</span>
-        <h1>BarberShop</h1>
-        <p>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
+      <section class="hero">
+        <span class="uptitle">A hair salon for men in Kyiv</span>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-subtitle">We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
       </section>
 
-      <section>
+      <section class="about">
         <ul>
           <li>
             <img src="./images/best1.jpg" width="270" height="445" alt="best" />
           </li>
           <li>
+            <p>Lorem </p>
             <img src="./images/best2.jpg" width="270" height="445" alt="best" />
           </li>
         </ul>
         <span>About</span>
-        <h2>Best Barbershop in your city</h2>
+        <h2 class="section-title title">Best Barbershop in your city</h2>
         <p>If you want to add more confidence to your image, you should definitely visit us.</p>
         <p>
           We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes
           to us!
         </p>
         <button type="button">ONLINE-BOOKING</button>
+
+        <a class="test" href="#">Test1</a>
+        <p class="test">Test2</p>
       </section>
 
       <section>
@@ -107,7 +115,7 @@
         </ul>
         <div>
           <span>Old traditional school</span>
-          <h2>¿Why people come to us?</h2>
+          <h2 class="section-title">¿Why people come to us?</h2>
           <p>Only good things are said about us. But it's better to see and feel 1 time than read 10 times.</p>
         </div>
       </section>
@@ -151,7 +159,7 @@
 
       <section>
         <span>In Latin, "barba" means "beard"</span>
-        <h2 hidden>Portfolio</h2>
+        <h2 class="hide">Portfolio</h2>
         <ul>
           <li>
             <img src="./images/beard1.jpg" width="270" height="360" alt="beard" />

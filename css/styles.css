@@ -1,1 +1,155 @@
+:root {
+  --font-ral: "Raleway", sans-serif;
+  --color-gray: #303030;
+  --color-red: red;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* .link{
+  list-style: none;
+} */
+.hide {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.test {
+  font-size: 60px;
+}
+#test {
+}
+a {
+}
+p {
+}
+h1 {
+}
+a.test {
+  color: red;
+}
+p.test {
+  color: #ff6c00;
+}
+ul {
+  list-style: none;
+}
+.section-title {
+  font-family: var(--font-ral);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+}
+.header a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+  text-decoration: none;
+}
+.header {
+  background-color: yellowgreen;
+}
+.logo {
+}
+.header-nav {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.header-nav-link {
+  /* font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: #ffffff; */
+  text-decoration: none;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-nav-link.current {
+  color: #ff6c00;
+}
+
+.header-nav-link:active {
+  color: #000;
+}
+.header-contact {
+  /* font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em; */
+  text-transform: uppercase;
+}
+
+/* line-height / font-size =  */
+
+.header-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--color-gray);
+}
+
+.hero {
+  background-image: url(../images/hero_image.jpg);
+}
+.hero .uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  font-family: var(--font-ral);
+  font-size: 72px;
+  line-height: 1.1805;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* .hero-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+} */
+.about>p {
+  font-size: 14px;
+}
