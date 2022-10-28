@@ -1,5 +1,5 @@
 :root {
-  --font-ral: "Raleway", sans-serif;
+  --font-ral: 'Raleway', sans-serif;
   --color-gray: #303030;
   --color-red: red;
 }
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 /* .link{
   list-style: none;
@@ -28,23 +28,7 @@ body {
   width: 1px;
   word-wrap: normal !important;
 }
-.test {
-  font-size: 60px;
-}
-#test {
-}
-a {
-}
-p {
-}
-h1 {
-}
-a.test {
-  color: red;
-}
-p.test {
-  color: #ff6c00;
-}
+
 ul {
   list-style: none;
 }
@@ -64,7 +48,7 @@ ul {
   text-decoration: none;
 }
 .header {
-  background-color: yellowgreen;
+  background-color: rgb(73, 75, 70);
 }
 .logo {
 }
@@ -86,6 +70,7 @@ h6 {
   letter-spacing: 0.1em;
   color: #ffffff; */
   text-decoration: none;
+  color: #ffffff;
 }
 
 .header-nav-link:hover,
@@ -103,6 +88,7 @@ h6 {
   line-height: 1.3333;
   letter-spacing: 0.1em; */
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* line-height / font-size =  */
@@ -118,7 +104,7 @@ h6 {
   border-radius: 25px;
 }
 
-.uptitle {
+.hero-uptitle {
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
@@ -129,7 +115,7 @@ h6 {
 .hero {
   background-image: url(../images/hero_image.jpg);
 }
-.hero .uptitle {
+.hero-uptitle {
   color: rgba(157, 164, 189, 0.6);
 }
 
@@ -150,6 +136,6 @@ h6 {
 /* .hero-uptitle {
   color: rgba(157, 164, 189, 0.6);
 } */
-.about>p {
+.about > p {
   font-size: 14px;
 }
