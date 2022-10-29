@@ -1,10 +1,25 @@
 :root {
   --font-ral: 'Raleway', sans-serif;
   --color-gray: #303030;
-  --color-red: red;
+  --first-title-color: #ffffff;
+  --second-title-color: #303030;
+  --first-btn-color: #ffffff;
+  --second-btn-color: #303030;
+  --base-lg: 1.36;
 }
 
-* {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -29,9 +44,10 @@ body {
   word-wrap: normal !important;
 }
 
-ul {
-  list-style: none;
+.link {
+  text-decoration: none;
 }
+
 .section-title {
   font-family: var(--font-ral);
   font-weight: 700;
@@ -39,6 +55,26 @@ ul {
   line-height: 1.1666;
   letter-spacing: 0.05em;
 }
+
+.uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* -----------------HEADER---------------- */
+
 .header a {
   font-weight: 600;
   font-size: 12px;
@@ -50,19 +86,11 @@ ul {
 .header {
   background-color: rgb(73, 75, 70);
 }
-.logo {
-}
+
 .header-nav {
   list-style: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
+
 .header-nav-link {
   /* font-weight: 600;
   font-size: 12px;
@@ -94,21 +122,27 @@ h6 {
 /* line-height / font-size =  */
 
 .header-btn {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
+  color: var(--first-btn-color);
 }
 
-.hero-uptitle {
+/* -----------------HERO---------------- */
+.hero-list {
+  background-color: #ffffff;
+}
+
+.hero-link {
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
-  text-transform: uppercase;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: #ff6c00;
+}
+.hero-uptitle {
   color: var(--color-gray);
 }
 
@@ -124,7 +158,7 @@ h6 {
   font-size: 72px;
   line-height: 1.1805;
   letter-spacing: 0.05em;
-  color: #ffffff;
+  color: var(--first-title-color);
 }
 .hero-subtitle {
   font-size: 18px;
@@ -133,9 +167,196 @@ h6 {
   color: #9da4bd;
 }
 
-/* .hero-uptitle {
-  color: rgba(157, 164, 189, 0.6);
-} */
-.about > p {
+/* -----------------ABOUT---------------- */
+
+.about-list {
+}
+.about-item {
+}
+.about-uptitle {
+  color: #303030;
+}
+
+.about-title {
+  color: var(--second-title-color);
+}
+
+.about-subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about-text {
   font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-btn {
+  color: var(--second-btn-color);
+}
+
+/* -----------------PRICES---------------- */
+
+.prices {
+  background-color: #303030;
+}
+.prices-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+  color: var(--first-title-color);
+}
+
+.prices-list {
+}
+.prices-item {
+}
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.prices-btn {
+  color: var(--first-btn-color);
+}
+
+/* -----------------BENEFITS---------------- */
+
+.benefits {
+}
+
+.benefits-list {
+}
+
+.benefits-item {
+}
+
+.benefits-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.benefits-plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+  color: #ff6c00;
+}
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+
+.benefits-uptitle {
+  color: #303030;
+}
+
+.benefits-title {
+  color: var(--second-title-color);
+}
+.benefits-subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* -----------------BARBERS---------------- */
+
+.barbers {
+}
+.barbers-uptitle {
+  color: #303030;
+}
+
+.barbers-title {
+  color: #303030;
+}
+
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+}
+
+.barbers-item-text {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.barbers-soc-list {
+}
+.barbers-soc-item {
+}
+.barbers-soc-link {
+}
+
+/* -----------------GALLERY---------------- */
+
+.gallery-uptitle {
+  color: #303030;
+}
+
+/* -----------------CONTaCTS---------------- */
+
+.contacts {
+  background-color: #303030;
+}
+.contacts-title {
+  color: var(--first-title-color);
+}
+
+.contacts-address {
+  font-style: inherit;
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+.contacts-link-bold {
+  font-weight: 700;
+}
+
+.contacts-schedule-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.contacts-schedule-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
