@@ -24,6 +24,14 @@ ul {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -42,6 +50,14 @@ body {
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .link {
@@ -84,6 +100,8 @@ body {
   text-decoration: none;
 }
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: rgb(73, 75, 70);
 }
 
@@ -147,10 +165,15 @@ body {
 }
 
 .hero {
+}
+
+.hero-wrap {
   background-image: url(../images/hero_image.jpg);
+  padding: 272px 100px 208px 100px;
 }
 .hero-uptitle {
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -159,6 +182,7 @@ body {
   line-height: 1.1805;
   letter-spacing: 0.05em;
   color: var(--first-title-color);
+  margin-bottom: 20px;
 }
 .hero-subtitle {
   font-size: 18px;
@@ -169,16 +193,24 @@ body {
 
 /* -----------------ABOUT---------------- */
 
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: rgb(179, 223, 223);
+}
+
 .about-list {
 }
 .about-item {
 }
 .about-uptitle {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .about-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 
 .about-subtitle {
@@ -186,6 +218,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 20px;
 }
 
 .about-text {
@@ -193,6 +226,7 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 42px;
 }
 .about-btn {
   color: var(--second-btn-color);
@@ -202,6 +236,8 @@ body {
 
 .prices {
   background-color: #303030;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .prices-uptitle {
   color: rgba(157, 164, 189, 0.6);
@@ -211,6 +247,8 @@ body {
 }
 
 .prices-list {
+  border: 1px solid #ffffff;
+  padding: 30px 20px;
 }
 .prices-item {
 }
@@ -222,17 +260,26 @@ body {
 }
 .prices-btn {
   color: var(--first-btn-color);
+  display: block;
+  margin: 0 auto;
 }
 
 /* -----------------BENEFITS---------------- */
 
 .benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .benefits-list {
 }
 
 .benefits-item {
+  width: 170px;
+  height: 133px;
+  border: 1px solid #000000;
+  padding: 20px 24px;
+  text-align: center;
 }
 
 .benefits-count {
@@ -261,10 +308,12 @@ body {
 
 .benefits-uptitle {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .benefits-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 .benefits-subtitle {
   font-size: 18px;
@@ -276,13 +325,17 @@ body {
 /* -----------------BARBERS---------------- */
 
 .barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .barbers-uptitle {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .barbers-title {
   color: #303030;
+  margin-bottom: 44px;
 }
 
 .barbers-list {
@@ -296,6 +349,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+  margin-bottom: 8px;
 }
 
 .barbers-item-text {
