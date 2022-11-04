@@ -22,11 +22,11 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-conteiner">
         <a href="/" class="logo">
           <img src="./images/logo.svg" alt="logo" />
         </a>
-        <nav>
+        <nav class="navigation">
           <ul class="header-nav">
             <li><a class="header-nav-link current" href="#about">About</a></li>
             <li>
@@ -46,7 +46,7 @@
 
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <ul class="hero-list">
             <li class="hero-item">
               <a
@@ -79,7 +79,7 @@
       </section>
 
       <section class="about" id="about">
-        <div class="container">
+        <div class="container about-container">
           <ul class="about-list">
             <li class="about-item">
               <img
@@ -98,22 +98,24 @@
               />
             </li>
           </ul>
-          <p class="about-uptitle uptitle">About</p>
-          <h2 class="section-title about-title">
-            Best Barbershop in your city
-          </h2>
-          <p class="about-subtitle">
-            If you want to add more confidence to your image, you should
-            definitely visit us.
-          </p>
-          <p class="about-text">
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
+          <div class="about-wrap">
+            <p class="about-uptitle uptitle">About</p>
+            <h2 class="section-title about-title">
+              Best Barbershop in your city
+            </h2>
+            <p class="about-subtitle">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="about-text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
+          </div>
         </div>
       </section>
 
@@ -123,48 +125,47 @@
             Spend your time with the best masters
           </p>
           <h2 class="prices-title section-title">Services and prices</h2>
-          <ul class="prices-list">
-            <li class="prices-item">
-              <p class="prices-item-text">Men’s haircut</p>
-              <span class="prices-item-text">from 300 uah.</span>
-            </li>
+          <div class="prices-wrap">
+            <ul class="prices-list">
+              <li class="prices-item">
+                <p class="prices-item-text">Men’s haircut</p>
+                <span class="prices-item-text">from 300 uah.</span>
+              </li>
 
-            <li class="prices-item">
-              <p class="prices-item-text">Beard trim</p>
-              <span class="prices-item-text">from 300 uah.</span>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Mustache trim</p>
-              <span class="prices-item-text">from 200 uah.</span>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Straight razor shave</p>
-              <span class="prices-item-text">from 200 uah.</span>
-            </li>
-          </ul>
+              <li class="prices-item">
+                <p class="prices-item-text">Beard trim</p>
+                <span class="prices-item-text">from 300 uah.</span>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Mustache trim</p>
+                <span class="prices-item-text">from 200 uah.</span>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Straight razor shave</p>
+                <span class="prices-item-text">from 200 uah.</span>
+              </li>
+            </ul>
 
-          <ul class="prices-list">
-            <li class="prices-item">
-              <p class="prices-item-text">
-                Trainee’s haircut <span>from 50 uah.</span>
-              </p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">
-                Haircut under the nozzle <span>from 200 uah.</span>
-              </p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">
-                Children’s haircut (0-12 y.o.) <span>from 300 uah.</span>
-              </p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">
-                Camouflage of gray hair <span>from 200 uah.</span>
-              </p>
-            </li>
-          </ul>
+            <ul class="prices-list">
+              <li class="prices-item">
+                <p class="prices-item-text">Men’s haircut</p>
+                <span class="prices-item-text">from 300 uah.</span>
+              </li>
+
+              <li class="prices-item">
+                <p class="prices-item-text">Beard trim</p>
+                <span class="prices-item-text">from 300 uah.</span>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Mustache trim</p>
+                <span class="prices-item-text">from 200 uah.</span>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Straight razor shave</p>
+                <span class="prices-item-text">from 200 uah.</span>
+              </li>
+            </ul>
+          </div>
           <button class="prices-btn btn" type="button">online-booking</button>
         </div>
       </section>
@@ -290,42 +291,76 @@
       </section>
 
       <section class="gallery">
-        <p class="gallery-uptitle uptitle">In Latin, "barba" means "beard"</p>
-        <h2 class="hide">Portfolio</h2>
-        <ul class="gallery-list">
-          <li class="gallery-item">
-            <img
-              src="./images/beard1.jpg"
-              width="270"
-              height="360"
-              alt="beard"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./images/beard2.jpg"
-              width="270"
-              height="360"
-              alt="beard"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./images/beard3.jpg"
-              width="270"
-              height="360"
-              alt="beard"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./images/beard4.jpg"
-              width="270"
-              height="360"
-              alt="beard"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <p class="gallery-uptitle uptitle">In Latin, "barba" means "beard"</p>
+          <h2 class="hide">Portfolio</h2>
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img
+                src="./images/beard1.jpg"
+                width="270"
+                height="360"
+                alt="beard"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./images/beard2.jpg"
+                width="270"
+                height="360"
+                alt="beard"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./images/beard3.jpg"
+                width="270"
+                height="360"
+                alt="beard"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./images/beard4.jpg"
+                width="270"
+                height="360"
+                alt="beard"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./images/beard1.jpg"
+                width="270"
+                height="360"
+                alt="beard"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./images/beard2.jpg"
+                width="270"
+                height="360"
+                alt="beard"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./images/beard3.jpg"
+                width="270"
+                height="360"
+                alt="beard"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./images/beard4.jpg"
+                width="270"
+                height="360"
+                alt="beard"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="contacts">
@@ -359,17 +394,21 @@
     </main>
 
     <footer>
-      <p>&#169; Copyright 2020</p>
+      <div class="container">
+        <p>&#169; Copyright 2020</p>
 
-      <div>
-        <ul>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-          </li>
-          <li>
-            <a href="#" target="_blank" rel="noopener noreferrer">Youtube</a>
-          </li>
-        </ul>
+        <div>
+          <ul>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">Youtube</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
