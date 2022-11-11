@@ -81,6 +81,16 @@ body {
   font-size: 11px;
   line-height: 15px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.uptitle::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 
 .btn {
@@ -218,7 +228,19 @@ body {
   letter-spacing: 0.05em;
   color: var(--first-title-color);
   margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
 }
+
+.hero-title::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  background-image: url(../images/facebook.svg);
+  background-size: contain;
+}
+
 .hero-subtitle {
   font-size: 18px;
   line-height: 1.6666;
@@ -282,9 +304,15 @@ body {
 /* -----------------PRICES---------------- */
 
 .prices {
-  background-color: #303030;
+  background-color: #111319;
+  background-image: url(../images/prices-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 120px;
   padding-bottom: 120px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .prices-uptitle {
   color: rgba(157, 164, 189, 0.6);
@@ -306,10 +334,36 @@ body {
   padding: 30px 20px;
   width: calc((100% - 30px) / 2);
 }
+
+.prices-list:first-child {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.prices-list:last-child {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+}
 .prices-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.prices-item::before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
 }
 
 .prices-item:last-child {
@@ -320,6 +374,9 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+.prices-item-text:first-child {
+  order: -1;
 }
 .prices-btn {
   color: var(--first-btn-color);
@@ -334,15 +391,38 @@ body {
   padding-bottom: 120px;
 }
 
+.benefits-container {
+  display: flex;
+  padding-left: 115px;
+  gap: 130px;
+}
+
+.benefits-wrap {
+  max-width: 500px;
+  padding-top: 9px;
+}
+
 .benefits-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
 }
 
 .benefits-item {
   width: 170px;
   height: 133px;
-  border: 1px solid #000000;
+  background-color: #f7f7f7;
   padding: 20px 24px;
   text-align: center;
+}
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
 }
 
 .benefits-count {
@@ -360,6 +440,9 @@ body {
   line-height: calc(22 / 16);
   text-align: center;
   color: #ff6c00;
+  vertical-align: top;
+  display: inline-block;
+  padding-top: 11px;
 }
 .benefits-item-text {
   font-weight: 600;
@@ -390,6 +473,7 @@ body {
 .barbers {
   padding-top: 120px;
   padding-bottom: 120px;
+  background-color: #f7f7f7;
 }
 .barbers-uptitle {
   color: #303030;
@@ -466,6 +550,11 @@ body {
 
 /* -----------------GALLERY---------------- */
 
+.gallery {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .gallery-uptitle {
   color: #303030;
   margin-bottom: 44px;
@@ -483,21 +572,50 @@ body {
   width: calc((100% - 90px) / 4);
 }
 
+.contact-wrap {
+  background-color: #191c26;
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.contact-wrap > .container {
+  display: flex;
+}
+
+.online {
+  width: calc(50% + 15px);
+  padding-top: 130px;
+}
+
+.online-title {
+  color: var(--first-title-color);
+}
+
 /* -----------------CONTaCTS---------------- */
 
 .contacts {
-  background-color: #303030;
+  width: calc(50% - 15px);
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 100px;
 }
 .contacts-title {
   color: var(--first-title-color);
+  margin-bottom: 44px;
 }
 
 .contacts-address {
   font-style: inherit;
+  margin-bottom: 70px;
 }
 .contacts-list {
 }
-.contacts-item {
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .contacts-link {
   font-size: 18px;
@@ -517,6 +635,8 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   color: #ffffff;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .contacts-schedule-text {
   font-size: 18px;
