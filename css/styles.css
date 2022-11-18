@@ -151,6 +151,7 @@ body {
   color: #ffffff; */
   text-decoration: none;
   color: #ffffff;
+  transition: color 300ms linear;
 }
 
 .header-nav-link:hover,
@@ -183,9 +184,27 @@ body {
 .hero-container {
   display: flex;
 }
-.hero-list {
-  background-color: #ffffff;
+
+.soc-list {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 27px;
+  padding-bottom: 40px;
+}
+.hero-list {
+  display: flex;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-list::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
 }
 
 .hero-link {
@@ -492,6 +511,30 @@ body {
 .barbers-item {
   width: calc((100% - 60px) / 3);
 }
+
+.barbers-item:hover .barbers-top-text {
+  transform: translateY(0);
+}
+
+.barbers-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.barbers-top-text {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 106, 0, 0.681);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+  overflow: auto;
+}
 .barbers-item-title {
   font-weight: 400;
   font-size: 18px;
@@ -529,24 +572,26 @@ body {
   align-items: center;
   justify-content: center;
   fill: #ffffff;
+  transition: background-color 300ms linear;
 }
 
-/* .barbers-soc-icon {
-  fill: currentColor;
-} */
-
-.barbers-soc-link:hover {
-  background-color: aquamarine;
-  fill: blueviolet;
+.barbers-soc-icon {
+  fill: #ffffff;
+  transition: fill 300ms linear;
 }
 
 /* .barbers-soc-link:hover {
+  background-color: aquamarine;
+  fill: blueviolet;
+} */
+
+.barbers-soc-link:hover {
   background-color: aquamarine;
 }
 
 .barbers-soc-link:hover .barbers-soc-icon {
   fill: blueviolet;
-} */
+}
 
 /* -----------------GALLERY---------------- */
 
@@ -643,4 +688,49 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 48, 48, 0.563);
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.modal {
+  width: 500px;
+  min-height: 550px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1);
+  transition: transform 300ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(1.5);
+}
+
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
