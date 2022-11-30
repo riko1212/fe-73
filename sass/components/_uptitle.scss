@@ -1,0 +1,15 @@
+.uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
