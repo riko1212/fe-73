@@ -1,10 +1,11 @@
 .uptitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
+  // font-weight: 600;
+  // font-size: 11px;
+  // line-height: 15px;
   text-transform: uppercase;
-  display: flex;
-  align-items: center;
+  @include font(600, 11px, 15px, null);
+
+  @extend %list;
   gap: 20px;
   &::before {
     content: '';
@@ -12,4 +13,12 @@
     height: 1px;
     background-color: currentColor;
   }
+}
+
+.uptitle--color-light {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.uptitle--color-dark {
+  color: #303030;
 }

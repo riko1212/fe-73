@@ -27,27 +27,33 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-conteiner">
-        <a href="/" class="logo">
+      <div class="container header__conteiner">
+        <a href="/" class="logo header__logo">
           <svg width="69" height="55">
             <use href="./images/icons.svg#icon-logo"></use>
           </svg>
         </a>
-        <nav class="navigation">
-          <ul class="header-nav">
-            <li><a class="header-nav-link current" href="#about">About</a></li>
-            <li>
-              <a class="header-nav-link" href="#prices">Services and prices</a>
+        <nav class="navigation header__navigation">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link current" href="#about">About</a>
             </li>
-            <li><a class="header-nav-link" href="#barbers">Barbers</a></li>
-            <li>
-              <a class="header-nav-link" href="./contacts.html">Contacts</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#prices">Services and prices</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#barbers">Barbers</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./contacts.html">Contacts</a>
             </li>
           </ul>
         </nav>
-        <a class="header-contact" href="tel:+380441111111">+38 044 111 11 11</a>
+        <a class="header__contact" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
         <!-- dadadadada -->
-        <button class="header-btn btn" type="button" data-modal-open>
+        <button class="header__btn btn" type="button" data-modal-open>
           Online-booking
         </button>
       </div>
@@ -55,35 +61,37 @@
 
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <div class="soc-list">
-            <ul class="hero-list">
-              <li class="hero-item">
+        <div class="container hero__container">
+          <div class="soc">
+            <ul class="soc-list">
+              <li class="soc-list__item">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hero-link link"
+                  class="soc-list__link link"
                   >Instagram</a
                 >
               </li>
-              <li class="hero-item">
+              <li class="soc-list__item">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hero-link link"
+                  class="soc-list__link link"
                   >Youtube</a
                 >
               </li>
             </ul>
           </div>
-          <div class="hero-wrap">
-            <p class="hero-uptitle uptitle">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title animate__animated animate__wobble">
+          <div class="hero__wrap">
+            <p class="hero__uptitle uptitle uptitle--color-light">
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero__title animate__animated animate__wobble">
               BarberShop
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero__subtitle">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
@@ -92,9 +100,9 @@
       </section>
 
       <section class="about" id="about">
-        <div class="container about-container">
-          <ul class="about-list">
-            <li class="about-item">
+        <div class="container about__container">
+          <ul class="picture-list">
+            <li class="picture-list__item">
               <img
                 src="./images/best1.jpg"
                 width="270"
@@ -102,7 +110,7 @@
                 alt="best"
               />
             </li>
-            <li class="about-item">
+            <li class="picture-list__item">
               <img
                 src="./images/best2.jpg"
                 width="270"
@@ -111,77 +119,77 @@
               />
             </li>
           </ul>
-          <div class="about-wrap">
-            <p class="about-uptitle uptitle">About</p>
-            <h2 class="section-title about-title" data-aos="zoom-out-down">
+          <div class="about__wrap">
+            <p class="about__uptitle uptitle uptitle--color-dark">About</p>
+            <h2 class="section-title about__title" data-aos="zoom-out-down">
               Best Barbershop in your city
             </h2>
-            <p class="about-subtitle">
+            <p class="about__subtitle">
               If you want to add more confidence to your image, you should
               definitely visit us.
             </p>
-            <p class="about-text">
+            <p class="about__text">
               We are a team that never stops at what has been achieved and are
               thirsty for changes. And when you fall into the hands of our
               master, you will never be the same again. We are a team that is
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
+            <button type="button" class="about__btn btn">ONLINE-BOOKING</button>
           </div>
         </div>
       </section>
 
       <section class="prices" id="prices">
         <div class="container">
-          <p class="prices-uptitle uptitle">
+          <p class="prices__uptitle uptitle uptitle--color-light">
             Spend your time with the best masters
           </p>
-          <h2 class="prices-title section-title" data-aos="flip-up">
+          <h2 class="prices__title section-title" data-aos="flip-up">
             Services and prices
           </h2>
-          <div class="prices-wrap">
-            <ul class="prices-list">
-              <li class="prices-item">
-                <p class="prices-item-text">Men’s haircut</p>
-                <span class="prices-item-text">from 300 uah.</span>
+          <div class="prices__wrap">
+            <ul class="table-list">
+              <li class="table-list__item">
+                <p class="table-list__item-text">Men’s haircut</p>
+                <span class="table-list__item-text">from 300 uah.</span>
               </li>
 
-              <li class="prices-item">
-                <p class="prices-item-text">Beard trim</p>
-                <span class="prices-item-text">from 300 uah.</span>
+              <li class="table-list__item">
+                <p class="table-list__item-text">Beard trim</p>
+                <span class="table-list__item-text">from 300 uah.</span>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Mustache trim</p>
-                <span class="prices-item-text">from 200 uah.</span>
+              <li class="table-list__item">
+                <p class="table-list__item-text">Mustache trim</p>
+                <span class="table-list__item-text">from 200 uah.</span>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Straight razor shave</p>
-                <span class="prices-item-text">from 200 uah.</span>
+              <li class="table-list__item">
+                <p class="table-list__item-text">Straight razor shave</p>
+                <span class="table-list__item-text">from 200 uah.</span>
               </li>
             </ul>
 
-            <ul class="prices-list">
-              <li class="prices-item">
-                <p class="prices-item-text">Men’s haircut</p>
-                <span class="prices-item-text">from 300 uah.</span>
+            <ul class="table-list">
+              <li class="table-list__item">
+                <p class="table-list__item-text">Men’s haircut</p>
+                <span class="table-list__item-text">from 300 uah.</span>
               </li>
 
-              <li class="prices-item">
-                <p class="prices-item-text">Beard trim</p>
-                <span class="prices-item-text">from 300 uah.</span>
+              <li class="table-list__item">
+                <p class="table-list__item-text">Beard trim</p>
+                <span class="table-list__item-text">from 300 uah.</span>
               </li>
               <li class="prices-item">
-                <p class="prices-item-text">Mustache trim</p>
-                <span class="prices-item-text">from 200 uah.</span>
+                <p class="table-list__item-text">Mustache trim</p>
+                <span class="table-list__item-text">from 200 uah.</span>
               </li>
-              <li class="prices-item">
-                <p class="prices-item-text">Straight razor shave</p>
-                <span class="prices-item-text">from 200 uah.</span>
+              <li class="table-list__item">
+                <p class="table-list__item-text">Straight razor shave</p>
+                <span class="table-list__item-text">from 200 uah.</span>
               </li>
             </ul>
           </div>
-          <button class="prices-btn btn" type="button">online-booking</button>
+          <button class="prices__btn btn" type="button">online-booking</button>
         </div>
       </section>
 
@@ -224,20 +232,20 @@
 
       <section class="barbers" id="barbers">
         <div class="container">
-          <p class="barbers-uptitle uptitle">
+          <p class="barbers__uptitle uptitle uptitle--color-dark">
             For true enjoyers of the atmosphere
           </p>
-          <h2 class="barbers-title section-title">Our barbers</h2>
-          <ul class="barbers-list">
-            <li class="barbers-item">
-              <div class="barbers-top-wrap">
+          <h2 class="barbers__title section-title">Our barbers</h2>
+          <ul class="card-list">
+            <li class="card-list__item">
+              <div class="card-list__top-wrap">
                 <img
                   src="./images/john_smith.jpg"
                   width="370"
                   height="346"
                   alt="John Smith"
                 />
-                <p class="barbers-top-text">
+                <p class="card-list__top-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
                   modi. Reprehenderit nobis officia tenetur, mollitia dolorum
                   non. Fugiat provident quia consequuntur nulla. Quo veniam qui
@@ -248,81 +256,81 @@
                   Velit, beatae!
                 </p>
               </div>
-              <h3 class="barbers-item-title">John Smith</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
-              <ul class="barbers-soc-list">
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#">
-                    <svg class="barbers-soc-icon" width="20" height="20">
+              <h3 class="card-list__item-title">John Smith</h3>
+              <p class="card-list__item-text">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"
-                    ><svg class="barbers-soc-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"
+                    ><svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use></svg
                   ></a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"
-                    ><svg class="barbers-soc-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"
+                    ><svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use></svg
                   ></a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"
-                    ><svg class="barbers-soc-icon" width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"
+                    ><svg class="socials__icon" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram"></use></svg
                   ></a>
                 </li>
               </ul>
             </li>
-            <li class="barbers-item">
+            <li class="card-list__item">
               <img
                 src="./images/michele_doe.jpg"
                 width="370"
                 height="346"
                 alt="Michele Doe"
               />
-              <h3 class="barbers-item-title">Michele Doe</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
-              <ul class="barbers-soc-list">
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"></a>
+              <h3 class="card-list__item-title">Michele Doe</h3>
+              <p class="card-list__item-text">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"></a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"></a>
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"></a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"></a>
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"></a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"></a>
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"></a>
                 </li>
               </ul>
             </li>
-            <li class="barbers-item">
+            <li class="card-list__item">
               <img
                 src="./images/alan_black.jpg"
                 width="370"
                 height="346"
                 alt="Alan Black"
               />
-              <h3 class="barbers-item-title">Alan Black</h3>
-              <p class="barbers-item-text">Extreme Barber</p>
-              <ul class="barbers-soc-list">
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"></a>
+              <h3 class="card-list__item-title">Alan Black</h3>
+              <p class="card-list__item-text">Extreme Barber</p>
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"></a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"></a>
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"></a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"></a>
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"></a>
                 </li>
-                <li class="barbers-soc-item">
-                  <a class="barbers-soc-link link" href="#"></a>
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"></a>
                 </li>
               </ul>
             </li>
@@ -342,6 +350,33 @@
                 height="360"
                 alt="beard"
               />
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link link" href="#">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"
+                    ><svg class="socials__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"
+                    ><svg class="socials__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link link" href="#"
+                    ><svg class="socials__icon" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
             <li class="gallery-item">
               <img

@@ -1,11 +1,14 @@
 @import './utils/vars';
 @import './base/reset';
+@import './utils/placeholders';
+@import './utils/mixins';
 @import './utils/hide';
 @import './base/common';
 
 @import './components/container';
 @import './components/title';
 @import './components/uptitle';
+
 @import './components/btn';
 @import './components/modal';
 
