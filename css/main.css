@@ -34,6 +34,9 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .uptitle {
@@ -67,11 +70,26 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .section-title {
@@ -707,9 +725,21 @@ body {
 }
 
 .barbers {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background-color: #f7f7f7;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .barbers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .barbers__uptitle {
@@ -724,11 +754,22 @@ body {
 
 .card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .card-list__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .card-list__top-wrap {
@@ -813,26 +854,50 @@ body {
   fill: blueviolet;
 } */
 .gallery {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .gallery-uptitle {
   color: #303030;
-  margin-bottom: 44px;
+  margin-bottom: 71px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-uptitle {
+    margin-bottom: 44px;
+  }
 }
 
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 30px; */
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  row-gap: 50px;
+  gap: 30px;
 }
 
 .gallery-item {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .contact-wrap {
