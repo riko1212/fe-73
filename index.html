@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__conteiner">
         <a href="/" class="logo header__logo">
           <svg width="69" height="55">
@@ -56,11 +56,65 @@
         <button class="header__btn btn" type="button" data-modal-open>
           Online-booking
         </button>
+        <button type="button" class="menu-open" data-menu-open>O</button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close" data-menu-close>X</button>
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <a class="menu-list__link link current" href="#about">About</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link link" href="#prices"
+                  >Services and prices</a
+                >
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link link" href="#barbers">Barbers</a>
+              </li>
+              <li class="menu-list__item">
+                <a class="menu-list__link link" href="./contacts.html"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <a class="mob-menu__contact link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <button class="mob-menu__btn btn" type="button" data-modal-open>
+              Online-booking
+            </button>
+            <ul class="mob-soc">
+              <li class="mob-soc__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mob-soc__link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc__item">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="mob-soc__link link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
           <div class="soc">
             <ul class="soc-list">
@@ -97,7 +151,7 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- <section class="about" id="about">
         <div class="container about__container">
@@ -344,12 +398,27 @@
           <h2 class="hide">Portfolio</h2>
           <ul class="gallery-list">
             <li class="gallery-item">
-              <img
-                src="./images/beard1.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
+              <picture>
+                <source
+                  srcset="./images/beard1.jpg 1x, ./images/beard1-2x.jpeg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/beard1-tab.jpeg    1x,
+                    ./images/beard1-tab-2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/beard1-mob.jpeg    1x,
+                    ./images/beard1-mob-2x.jpeg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/beard1-mob.jpg" width="418" alt="beard" />
+              </picture>
             </li>
             <li class="gallery-item">
               <img
@@ -378,62 +447,7 @@
           </ul>
         </div>
       </section>
-      <section class="gallery">
-        <div class="container">
-          <p class="gallery-uptitle uptitle">In Latin, "barba" means "beard"</p>
-          <h2 class="hide">Portfolio</h2>
-          <ul class="gallery-list">
-            <li class="gallery-item">
-              <img
-                src="./images/beard1.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/beard2.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/beard3.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/beard4.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/beard4.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
-            </li>
-            <li class="gallery-item">
-              <img
-                src="./images/beard4.jpg"
-                width="270"
-                height="360"
-                alt="beard"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
+
       <!-- <div class="contact-wrap">
         <div class="container">
           <section class="online">
@@ -639,5 +653,6 @@
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
